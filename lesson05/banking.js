@@ -8,11 +8,11 @@ function myBank(){
     switch (input) {
       case "W":
       amount = prompt('Enter a withdraw amount');
-      balance = balance - amount;
+      balance = balance - parseInt(amount);
       break;
       case "D":
       amount = prompt('Enter a deposit amount');
-      balance = balance + amount;
+      balance = balance + parseInt(amount);
       case "B":
       alert("Balance is " + balance);
       break;
